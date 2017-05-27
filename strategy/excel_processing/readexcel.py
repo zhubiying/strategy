@@ -12,13 +12,14 @@ class Readbypanda(object):
     def readfile(self):
         fr = open(self.infile, 'r')
         print(fr.readlines())
+
     def readexcel(self):
+        pandas.read_excel(self.infile)
 
 
-def main():
-    foo = Foo()
-    foo.re_write()
+
 
 
 if __name__ == "__main__":
-
+    readbypanda = Readbypanda()
+    readbypanda.re_write()
