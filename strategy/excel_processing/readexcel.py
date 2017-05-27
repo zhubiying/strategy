@@ -1,6 +1,8 @@
-class Foo(object):
+import pandas
+class Readbypanda(object):
     def __init__(self):
-        self.infile = "/Users/zhubiying/Documents/test.txt"
+        self.infile = "/Users/zhubiying/Documents/Time Series/midterm/q5data.xls"
+
 
     def re_write(self):
         fr = open(self.infile, 'w')
@@ -8,9 +10,9 @@ class Foo(object):
         fr.close()
 
     def readfile(self):
-
         fr = open(self.infile, 'r')
         print(fr.readlines())
+    def readexcel(self):
 
 
 def main():
@@ -19,4 +21,4 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+

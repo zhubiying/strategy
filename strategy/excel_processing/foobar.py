@@ -1,5 +1,4 @@
-import os
-import sys
+from test_harness import Foo
 
 
 
@@ -10,7 +9,7 @@ class Bar(object):
 
 def main():
     foo = Foo()
-    foo.re_write()
+    foo.readfile()
 
 
 if __name__ == "__main__":
